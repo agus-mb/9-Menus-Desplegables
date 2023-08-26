@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:content-box;
+   text-decoration: none;
+    list-style-type: none;
+    font-family: 'Rubik', sans-serif;
+} 
+
+main {
+    display: flex;
+    width: 100%;
+    margin:0px;
+    flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
+  gap:30px;
+    /*min-width: 824px;*/
+  }
+
+
+  

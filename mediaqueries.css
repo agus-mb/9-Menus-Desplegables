@@ -1,0 +1,489 @@
+@media (max-width: 992px) {
+    .navbar{
+        width: 100%;
+
+display: flex;
+flex-direction:row;
+gap:20px;
+z-index: 1;
+padding:5px;
+    }
+
+    .navbar-list {  
+         width:100%;
+         display: flex;
+         flex-direction:row;
+         gap:30px;
+         background-color: rgb(255, 255, 255);
+         align-items: center;
+         justify-content: center;
+ font-size: 25px;
+         z-index: 3px;
+         position: relative;
+     }
+
+   /*  .menu-toogle{
+ display: none;
+            }*/
+
+     .container-subitem-lista{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top:80px;
+        background-color: rgb(255, 255, 255);
+        padding-right: 10px;
+        padding-left: 5px;
+        margin-right: 25px;
+     }
+
+     .subitem-lista{
+        color:rgb(127, 127, 127);
+font-size: 25px;
+
+    }
+   
+    .item-lista{
+        color:rgb(0, 0, 0);
+            }
+
+            .presentacion{
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                gap:7px;
+                width: 100%;
+            position: absolute;
+            top: 25vh;
+            overflow: hidden;
+            
+            }
+            
+            
+            .imagen-presentacion{
+                width: 100%;
+                position: relative;
+                opacity: 0.5;
+                z-index: -1;
+            }
+            
+            .titulo{
+                font-size: 60px;
+                color:rgb(9, 9, 204);
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                text-align: center;
+            }
+            
+            .titulo-span{
+                font-size: 60px;
+                text-align: center;
+            }
+            
+            .frase{
+                font-family: 'Rubik', sans-serif;
+                font-size: 25px;
+                font-weight:400;
+                color: rgb(0, 34, 126);
+                text-align: center;
+            }
+            
+            .frase-2{
+                font-family: 'Rubik', sans-serif;
+                font-size: 25px;
+            }
+            
+            .contactanos{
+                border: 2px solid rgb(0, 34, 126);
+                padding:8px;
+                border-radius: 30px;
+            color:rgb(0, 34, 126);
+            background-color: rgba(9, 0, 139, 0.189);
+            font-weight: 500;
+            font-size: 25px;
+            }
+
+    
+#sobre-nos{
+    display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nos{
+display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px;
+  padding-bottom: 30px;
+}
+
+.titulo-sobreNos{
+padding:10px;
+font-size: 40px;
+}
+
+.descripcion-sobreNos{
+width: 55%;
+font-size: 25px;
+text-align: justify;
+
+}
+
+
+.viajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.viajes-intro{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap:10px;
+margin-bottom:30px;
+padding-top:20px;
+}
+
+.viajes-titulo{
+    font-size: 40px;
+text-align: center;
+
+}
+
+.viajes-descripcion{
+    width: 55%;
+    text-align: justify;
+     
+}
+
+#viajes{
+    background-color: rgb(230, 230, 230);
+}
+
+
+.pais{
+background-color: white;
+width: 70%;
+padding:30px;
+border-radius: 20px;
+font-size: 25px;
+}
+
+.pais:first-child{
+background-color: rgba(0, 32, 108, 0.26);
+}
+
+.pais:last-child{
+    background-color:rgba(0, 109, 128, 0.326);
+}
+
+.pais-titulo{
+    font-size: 40px;
+}
+
+.viajes-ampliar{
+    margin-left:45%;
+    border: 2px solid rgb(0, 34, 126);
+    padding:8px;
+    border-radius: 30px;
+color:rgb(0, 34, 126);
+background-color: rgba(9, 0, 139, 0.189);
+font-weight: 500;
+font-size: 50px;
+}
+
+.contenedor-pais-img{
+    width:100px;
+  height:100%;
+}
+
+.pais-img{
+    object-fit: cover;
+    width: 300%;
+    height: 200px;
+
+}
+
+.viajes-ampliado{
+    display:none;
+    background-color: rgb(230, 230, 230);
+    padding:10px;
+    margin:10px;
+    border-radius: 10px;
+}
+
+
+
+}
+
+
+@media (max-width: 576px){
+
+    .navbar{
+        width: 100%;
+        position: relative;
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+gap:20px;
+z-index: 1;
+    }
+
+    .logos-container{
+        display: flex;
+justify-content: space-between;
+padding: 10px;
+    }
+
+    .logo{
+width: 15%;
+    }
+
+    .menu-toogle{
+width:10%;
+z-index: 100;
+background-image: url("img/icons8-menu-50.png");
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+;
+    }
+
+.activo{
+        background-image: url("img/icons8-close-50.png");
+        background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+    }
+
+    .navbar-list {  
+       position: absolute;
+        top:0%;
+        left: 0%;
+        right: 0%;
+        width:100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+font-size: 50px;
+        z-index: 3px;
+    }
+
+    .desactivada{
+    display: none;
+    background-color: blanchedalmond;
+  }
+
+    .oculta{
+        display: none;
+    }
+
+    .item-lista{
+color:rgb(0, 0, 0);
+    }
+
+    .subitem-lista{
+        color:rgb(127, 127, 127);
+font-size: 42px;
+    }
+
+    .container-subitem-lista{
+        display: none;
+
+        position:static;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px
+    }
+
+
+    .flecha{
+        color:rgb(0, 0, 0);
+    }
+
+
+
+.presentacion{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+    width: 100%;
+position: absolute;
+top: 15vh;
+overflow: hidden;
+
+}
+
+
+.imagen-presentacion{
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.titulo{
+    font-size: 50px;
+    color:rgb(9, 9, 204);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.titulo-span{
+    font-size: 30px;
+    text-align: center;
+}
+
+.frase{
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+    font-weight:400;
+    color: rgb(0, 34, 126);
+    text-align: center;
+}
+
+.frase-2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+.contactanos{
+    border: 2px solid rgb(0, 34, 126);
+    padding:8px;
+    border-radius: 30px;
+color:rgb(0, 34, 126);
+background-color: rgba(9, 0, 139, 0.189);
+font-weight: 500;
+}
+
+#sobre-nos{
+    display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nos{
+display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px;
+  padding-bottom: 30px;
+}
+
+.titulo-sobreNos{
+padding:10px;
+
+}
+
+.descripcion-sobreNos{
+width: 55%;
+text-align: justify;
+
+}
+
+#viajes{
+    background-color: rgb(230, 230, 230);
+}
+
+.viajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.viajes-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap:10px;
+margin-bottom:30px;
+padding-top:20px;
+}
+
+.viajes-titulo{
+width:70%;
+text-align: center;
+
+}
+
+.viajes-descripcion{
+    width: 55%;
+    text-align: justify;
+     
+}
+
+.pais{
+background-color: white;
+width: 50%;
+padding:20px;
+border-radius: 20px;
+}
+
+.pais:first-child{
+background-color: rgba(0, 32, 108, 0.26);
+}
+
+.pais:last-child{
+    background-color:rgba(0, 109, 128, 0.326);
+}
+
+.pais-titulo{
+    font-size: 30px;
+}
+
+.viajes-ampliar{
+    margin-left:45%;
+    border: 2px solid rgb(0, 34, 126);
+    padding:8px;
+    border-radius: 30px;
+color:rgb(0, 34, 126);
+background-color: rgba(9, 0, 139, 0.189);
+font-weight: 500;
+font-size: 30px;
+}
+
+.contenedor-pais-img{
+    width:100px;
+  height:100%;
+}
+
+.pais-img{
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+}
+
+.viajes-ampliado{
+    display:none;
+    background-color: rgb(230, 230, 230);
+    padding:10px;
+    margin:10px;
+    border-radius: 10px;
+}
+
+
+
+}

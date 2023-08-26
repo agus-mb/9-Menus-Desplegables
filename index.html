@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daimar Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logos-container">
+            <img src="img/logo.png" alt="" class="logo">
+            <div class="menu-toogle"> </div>
+            </div>
+            <ul class="navbar-list">
+                <li>
+                  <a class="item-lista" href="#presentacion" >Inicio
+                  </a>
+                </li>
+                <li>
+                  <a class="item-lista" href="#sobre-nos">Sobre Nosotros</a>
+                </li>
+                <li>
+                  <a class="item-lista" href="#viajes">Viajes
+                  </a>
+                  <span class="flecha" onclick="toggleSubMenu(this)">></span>
+                  <ul class="container-subitem-lista">
+                    <li>
+                        <a class="subitem-lista" href="">Europa</a>
+                    </li>
+                    <li>
+                        <a class="subitem-lista" href="">Asia</a>
+                    </li>
+                    <li >
+                        <a class="subitem-lista" href="">America</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                    <a class="item-lista" href="#viajes">Promos
+                    </a>
+                    <span class="flecha" onclick="toggleSubMenu(this)">></span>
+                    <ul class="container-subitem-lista">
+                      <li>
+                          <a class="subitem-lista" href="">1</a>
+                      </li>
+                      <li >
+                          <a class="subitem-lista" href="">2</a>
+                      </li>
+                      <li>
+                          <a class="subitem-lista" href="">3</a>
+                      </li>
+                    </ul>
+                  </li>
+                <li>
+                  <a class="item-lista" href="#contacto">Contacto</a>
+                </li>
+                <li >
+                  <a class="btn-header item-lista" href="log-in.html">Ingresar</a>
+                </li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentacion">
+            <div class="presentacion">
+            <h1 class="titulo">daimar viajes<span class="titulo-span">.com</span>
+            </h1>
+              <p class="frase">
+                Los viajes que vos mereces, cuando vos quieras
+              </p>
+              <p class="frase-2">Servicio de viajes y escursiones.</p>
+              <a href="log-in.html" class="contactanos">Contactanos</a>
+            </div>
+            <div class="imgs-presentacion">
+             <img src="img/pareja-familia-viajando-juntos_1150-7772.avif" class="imagen-presentacion">
+            </div>
+        </section>
+        <section id="sobre-nos">
+            <div class="sobre-nos">
+                <h2 class="titulo-sobreNos">quienes somos?</h2>
+                <p class="descripcion-sobreNos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima corporis delectus ab tenetur illo cupiditate quidem, ut rerum omnis. Excepturi a eaque illum vel distinctio reiciendis quod ex dolores?</p>
+            </div>
+        </section>
+
+        <section id="viajes">
+            <div class="viajes-intro">
+                <h2 class="viajes-titulo">descubri los destinos que tenemos para ofrecerte!</h2>
+                <p class="viajes-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus soluta sunt doloribus neque illo sit distinctio.</p>
+            </div>
+            <div class="viajes">
+                <div class="pais">
+                    <div class="contenedor-pais-img">
+                        <img class="pais-img" src="img/europa.jpg" alt="">
+                    </div>
+                   
+                    <h3 class="pais-titulo">Europa</h3>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, veniam eveniet! Omnis laboriosam at fugiat illo deleniti neque, praesentium possimus accusamus consequuntur nostrum itaque porro ea corporis, blanditiis, quia distinctio?</p>
+                    <button class="viajes-ampliar"  onclick="toggleViajesBox(this)">+</button>
+                    <div class="viajes-ampliado">
+                        <p>te amo maxi</p>
+                    </div>
+                </div>
+                <div class="pais">
+                    <div class="contenedor-pais-img">
+                    <img class="pais-img" src="img/asia.jpg" alt="">
+                    </div>
+                    <h3 class="pais-titulo">Asia</h3>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, veniam eveniet! Omnis laboriosam at fugiat illo deleniti neque, praesentium possimus accusamus consequuntur nostrum itaque porro ea corporis, blanditiis, quia distinctio?</p>
+                    <button class="viajes-ampliar" onclick="toggleViajesBox(this)">+</button>
+                    <div class="viajes-ampliado">
+                        <p>lorem imput bla bla bla, x cosa, x otra</p>
+                    </div>
+                </div>
+                <div class="pais">
+                    <div class="contenedor-pais-img">
+                    <img class="pais-img" src="img/america.png" 
+                    alt="">
+                    </div>
+                    <h3 class="pais-titulo">America</h3>
+                    <p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, veniam eveniet! Omnis laboriosam at fugiat illo deleniti neque, praesentium possimus accusamus consequuntur nostrum itaque porro ea corporis, blanditiis, quia distinctio?</p>
+                    <button class="viajes-ampliar" onclick="toggleViajesBox(this)">+</button>
+                    <div class="viajes-ampliado">
+                        <p>lorem imput bla bla bla, x cosa, x otra</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
